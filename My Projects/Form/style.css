@@ -1,0 +1,157 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-image: url(images/oc-gonzalez-FbN2z3bEaSs-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.about-section {
+  width: 500px;
+  padding: 50px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: relative;
+  right: 350px;
+  top: 100px;
+}
+
+.table1 {
+  width: 500px;
+  height: 500px;
+  top: -150px;
+  margin: 50px;
+  position: relative;
+  left: 300px;
+}
+
+.iframe1 {
+  display: grid;
+  position: relative;
+  top: -350px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+li {
+  display: inline-block;
+}
+
+ul {
+  background-color: red;
+  padding: 20px;
+  text-align: center;
+}
+
+.ul3 {
+  background-color: red;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  top: -40px;
+}
+
+a {
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.form {
+  float: left;
+  position: relative;
+  right: 350px;
+  top: 100px;
+}
+
+.fieldset {
+  float: left;
+  width: 400px;
+  height: 500px;
+  top: 30px;
+  margin: 30px;
+}
+
+#input {
+  width: 400px;
+  margin: 10px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#table {
+  width: 500px;
+  height: 500px;
+  top: -260px;
+  margin: 50px;
+  position: relative;
+  left: 165px;
+}
+
+.iframe {
+  display: grid;
+  top: -500px;
+  position: relative;
+}
+
+.image {
+  display: grid;
+}
+
+.image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  place-items: center;
+  display: grid;
+}
+
+.title {
+  text-align: center;
+  padding: 0px;
+}
+
+button {
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  flex-direction: row;
+  text-align: center;
+}
+
+button:hover {
+  background-color: lightslategray;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+button {
+  background-color: #ffffff;
+  border-color: rgb(0, 26, 255);
+}
+
+.main {
+  margin: 2%;
+}
+
+/* very important */

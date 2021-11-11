@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Forms</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 class="display-1">Bootstrap forms</h1>
+    <!-- Container class to help space my content -->
+    <section class="container my-5">
+      <!-- Here I gave the form a border so that we can see it, and padding to help give the content some space -->
+      <form class="border border-secondary p-5">
+        <!-- Using display class to give heading a nice look -->
+        <h2 class="display-6">Sign in form</h2>
+        <!-- Using class mb-3 to give margin underneath the input. This makes sure that there is space underneath the input element -->
+        <div class="mb-3">
+          <!-- Using the FORM-LABEL class to style my label -->
+          <label for="email1" class="form-label">Email address</label>
+          <!-- Here we use the FORM-CONTROL class to style the actual input -->
+          <input
+            type="email"
+            class="form-control"
+            id="email1"
+            aria-describedby="emailHelp"
+          />
+          <div id="emailHelp" class="form-text">
+            We'll never share your email with anyone else.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+        </div>
+        <!-- Here we use the btn and btn-primary class to style the button and give it a blue background -->
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </section>
+
+    <section class="container">
+      <!-- Here I use the bootstrap grid to place all items in the form -->
+      <!-- I gave the form a border, and made the border rounded -->
+      <div class="row border rounded border-secondary p-5">
+        <!-- Full width display heading -->
+        <h2 class="col-12 display-6">Contact me</h2>
+        <!-- Full width subtitle, that has been styled to look like an h6, and is muted -->
+        <h3 class="col-12 text-muted h6 mb-5">
+          Please fill out this form and I will get back to you as soon as
+          possible
+        </h3>
+        <!-- Form half of page -->
+        <div class="col-md-6">
+          <form>
+            <!-- Side by side inputs -->
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="mb-3">
+                  <label for="fullName" class="form-label">Full name</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="fullName"
+                    aria-describedby="fullNameHelp"
+                  />
+                  <div id="fullNameHelp" class="form-text">
+                    We'll never share your details with anyone else.
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    aria-describedby="emailHelp"
+                  />
+                  <div id="emailHelp" class="form-text">
+                    We'll never share your email with anyone else.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End of side by side inputs -->
+            <!-- Message with extra margin botton -->
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <!-- Submit button styled to be blue -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <!-- End of form half -->
+        <!-- Map half of page -->
+        <div class="col-md-6">
+          <!-- Map -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.2674197088068!2d18.49050991506283!3d-33.985664280624135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc433bedd50e81%3A0x9c746d268c8e0ad9!2sLife%20Choices!5e0!3m2!1sen!2sza!4v1634900641655!5m2!1sen!2sza"
+            style="border: 0; width: 100%; height: 100%"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+        <!-- end of map hald -->
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

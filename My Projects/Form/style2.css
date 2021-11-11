@@ -1,0 +1,91 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  place-items: center;
+  background-image: url(images/oc-gonzalez-FbN2z3bEaSs-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+li {
+  display: inline-block;
+}
+ul {
+  background-color: red;
+  padding: 20px;
+  text-align: center;
+}
+a {
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+h1 {
+  margin: 50px;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  perspective: 1000px;
+  margin: 1rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  transition: all 1s ease;
+  transform-style: preserve-3d;
+}
+
+.card-container img {
+  width: 400px;
+  height: 300px;
+}
+
+.card:hover .card-container {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  grid-area: 1/1;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  text-align: center;
+}
+
+.card-front {
+  grid-area: 1/1;
+}
+
+.card-back {
+  width: 400px;
+  height: 300px;
+  grid-area: 1/1;
+  background-color: white;
+  transform: rotateY(180deg);
+}

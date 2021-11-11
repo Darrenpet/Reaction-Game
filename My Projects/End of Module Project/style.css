@@ -1,0 +1,266 @@
+body {
+  margin: 0;
+  font: normal 75% Verdana, Geneva, Tahoma, sans-serif;
+  background-color: whitesmoke;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #caf0f8;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.navbar {
+  background-color: #caf0f8;
+  width: 100%;
+}
+
+.offcanvas {
+  background-color: #caf0f8;
+}
+
+.logo-light {
+  width: 140px;
+  height: 50px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/*Home Page*/
+.section-slide {
+  height: auto;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  box-sizing: border-box;
+}
+
+.section-slide .home .container {
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-slide .home .container p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.section-slide .home .container p span.typed-text {
+  font-weight: normal;
+  color: #dd7732;
+}
+
+.section-slide .home .container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+
+.section-slide .home .container p span.cursor.typing {
+  animation: none;
+}
+
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+
+/*About and Skills*/
+.section-slide--section2 {
+  height: auto;
+  background-color: #caf0f8;
+}
+
+.progress {
+  background-color: black;
+}
+
+/*Work and Education*/
+.section-slide--section3 {
+  height: auto;
+  background-color: #caf0f8;
+  place-items: center;
+}
+
+.timeline ul {
+  background: #caf0f8;
+  padding: 50px 0;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #03045e;
+}
+
+.timeline ul li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+  z-index: 1;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 300px;
+  padding: 15px;
+  background: #90e0ef;
+}
+
+.timeline ul li div::before {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #90e0ef transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #90e0ef;
+}
+
+time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.timeline ul li::after {
+  transition: background 0.5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background: #0077b6;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+  width: 200px;
+}
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #90e0ef transparent transparent;
+  }
+  .navbar {
+    width: auto;
+  }
+}
+
+/*Project Sections*/
+.section-slide--section4 {
+  height: auto;
+  background-color: #caf0f8;
+}
+
+.card-img-top {
+  height: 10rem;
+  width: 16rem;
+}
+
+/*Testimonials*/
+.section-slide--section5 {
+  height: auto;
+  background-color: #caf0f8;
+}
+
+/*Contact Page*/
+.section-slide--section6 {
+  height: auto;
+  background-color: #caf0f8;
+}
