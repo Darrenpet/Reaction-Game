@@ -26,16 +26,16 @@
   <body>
     <header>
       <nav class="navbar navbar-light fixed-top shadow">
-        <div class="container">
+        <div class="container-fluid">
           <div class="col-lg-12 col-sm-12">
-            <h3 class="float-md-start mb-0">
+            <h3 class="float-md-end mb-0">
               <img
                 class="logo-light"
                 src="Assets/Landing/Darren Petersen.png"
               />
             </h3>
             <button
-              class="navbar-toggler text-end"
+              class="navbar-toggler"
               type="button"
               data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasNavbar"
@@ -45,15 +45,13 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div
-              class="offcanvas offcanvas-end"
+              class="offcanvas offcanvas-start"
               tabindex="-1"
               id="offcanvasNavbar"
               aria-labelledby="offcanvasNavbarLabel"
             >
               <div class="offcanvas-header">
-                <h2 class="offcanvas-title" id="offcanvasNavbarLabel">
-                  <u>Menu</u>
-                </h2>
+                <h2 class="offcanvas-title" id="offcanvasNavbarLabel"></h2>
                 <button
                   type="button"
                   class="btn-close text-reset"
@@ -65,30 +63,37 @@
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#"
-                      >Home</a
+                      ><i class="bi bi-house-fill"></i>Home</a
                     >
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#About and Skills"
-                      >About/Skills</a
+                      ><i class="bi bi-person-badge"></i>About Me</a
                     >
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#Work and Education"
-                      >Work/Education</a
+                      ><i class="bi bi-journal-bookmark"></i>My Resume</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#Projects">Projects</a>
+                    <a class="nav-link" href="#Projects"
+                      ><i class="bi bi-file-earmark-pdf"></i>Projects</a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#Testimonials">Testimonials</a>
+                    <a class="nav-link" href="#Testimonials"
+                      ><i class="bi bi-people"></i>Testimonials</a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#Contact">Contact</a>
+                    <a class="nav-link" href="#Contact"
+                      ><i class="bi bi-telephone-inbound"></i>Contact</a
+                    >
                   </li>
+                  <br />
                   <li class="nav-item">
-                    <p class="h5">+27 78 752 1530</p>
+                    <p class="h5"><i class="bi bi-phone"></i>+27 78 752 1530</p>
                   </li>
                 </ul>
               </div>
@@ -201,11 +206,7 @@
               <label class="mt-3 fs-6 fw-bold">HTML 30%</label>
               <div class="progress">
                 <div
-                  class="
-                    progress-bar
-                    bg-primary
-                    progress-bar-striped progress-bar-animated
-                  "
+                  class="progress-bar bg-primary progress-bar-striped progress-bar-animated"
                   role="progressbar"
                   style="width: 30%"
                   aria-valuenow="30"
@@ -218,11 +219,7 @@
               <label class="mt-3 fs-6 fw-bold">CSS 25%</label>
               <div class="progress">
                 <div
-                  class="
-                    progress-bar
-                    bg-primary
-                    progress-bar-striped progress-bar-animated
-                  "
+                  class="progress-bar bg-primary progress-bar-striped progress-bar-animated"
                   role="progressbar"
                   style="width: 25%"
                   aria-valuenow="25"
@@ -235,11 +232,7 @@
               <label class="mt-3 fs-6 fw-bold">JavaScript 10%</label>
               <div class="progress">
                 <div
-                  class="
-                    progress-bar
-                    bg-primary
-                    progress-bar-striped progress-bar-animated
-                  "
+                  class="progress-bar bg-primary progress-bar-striped progress-bar-animated"
                   role="progressbar"
                   style="width: 10%"
                   aria-valuenow="10"
@@ -252,11 +245,7 @@
               <label class="mt-3 fs-6 fw-bold">MySQL 25%</label>
               <div class="progress">
                 <div
-                  class="
-                    progress-bar
-                    bg-primary
-                    progress-bar-striped progress-bar-animated
-                  "
+                  class="progress-bar bg-primary progress-bar-striped progress-bar-animated"
                   role="progressbar"
                   style="width: 25%"
                   aria-valuenow="25"
@@ -269,11 +258,7 @@
               <label class="mt-3 fs-6 fw-bold">Front end development 20%</label>
               <div class="progress">
                 <div
-                  class="
-                    progress-bar
-                    bg-primary
-                    progress-bar-striped progress-bar-animated
-                  "
+                  class="progress-bar bg-primary progress-bar-striped progress-bar-animated"
                   role="progressbar"
                   style="width: 20%"
                   aria-valuenow="20"
@@ -286,11 +271,7 @@
               <label class="mt-3 fs-6 fw-bold">Back end development 20%</label>
               <div class="progress">
                 <div
-                  class="
-                    progress-bar
-                    bg-primary
-                    progress-bar-striped progress-bar-animated
-                  "
+                  class="progress-bar bg-primary progress-bar-striped progress-bar-animated"
                   role="progressbar"
                   style="width: 20%"
                   aria-valuenow="20"
@@ -308,60 +289,59 @@
       class="section-slide section-slide--section3 timeline m-3 p-3 shadow"
       id="Work and Education"
     >
-      <h1 class="text-center fw-bold"><u>Work/Education</u></h1>
-      <ul>
-        <li>
-          <div>
-            <time>December 2014</time>
-            <p>Finished matric with a Bachelors Pass.</p>
+      <div class="main-container">
+        <section id="timeline" class="timeline-outer">
+          <div class="container" id="content">
+            <div class="row">
+              <div class="col s12 m12 l12">
+                <h1 class="text-center fw-bold">My Resume</h1>
+                <ul class="timeline">
+                  <li class="event" data-date="2014/2014">
+                    <h2 class="fw-bold">Bachelors Pass</h2>
+                    <h2 class="fw-bold">Muizenberg High School</h2>
+                    <p>Finished my matric with a Bachelors Pass.</p>
+                  </li>
+                  <li class="event" data-date="2014/2020">
+                    <h2 class="fw-bold">Accountant/Bookkeeper</h2>
+                    <h2 class="fw-bold">Muizenberg Bowling and Croquet Club</h2>
+                    <p>
+                      Started doing volunteer bookkeeping and admin work at
+                      Muizenberg Bowling and Croquet Club.
+                    </p>
+                  </li>
+                  <li class="event" data-date="2016/2017">
+                    <h2 class="fw-bold">
+                      Higher Certificate in Accounting Science
+                    </h2>
+                    <h2 class="fw-bold">Univercity of South Africa (UNISA)</h2>
+                    <p>
+                      Started my Higher Certificate in Accounting Science.
+                      Subjects that I finished are: BNU1501, CAS1501, CLA1503,
+                      ENN1504, FAC1501, MNB1501, MAC1501 and TAX1501.
+                    </p>
+                    <p>
+                      I had to drop out from the course due to financial
+                      reasons. Subjects that are outstanding: AUE1501 and
+                      FAC1502.
+                    </p>
+                  </li>
+                  <li class="event" data-date="2021/Present">
+                    <h2 class="fw-bold">Web development and Coding</h2>
+                    <h2 class="fw-bold">LifeChoices Academy</h2>
+                    <p>
+                      Started a Web development and Coding Course at LifeChoices
+                      Academy. I have started learning the following languages:
+                      HTML, CSS, JavaScript, MySQL, Front-End and Back-End
+                      development.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </li>
-        <li>
-          <div>
-            <time>December 2014</time>
-            <p>
-              Started doing volunteer bookkeeping and admin work at Muizenberg
-              Bowling Club.
-            </p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <time>January 2016</time>
-            <p>
-              Started with my Higher Certificate in Accounting Science through
-              UNISA.
-            </p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <time>March 2017</time>
-            <p>Had to drop out of the course due to financial reasons.</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <time>October 2020</time>
-            <p>Stopped doing volunteer work at Muizenberg Bowling Club.</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <time>September 2021</time>
-            <p>
-              Started the Web Development and Coding course at LifeChoices
-              Academy.
-            </p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <time>October 2021</time>
-            <p>Made my first digital portfolio.</p>
-          </div>
-        </li>
-      </ul>
+        </section>
+        <br />
+      </div>
     </section>
 
     <section
@@ -449,33 +429,41 @@
           </div>
 
           <div class="col pb-5">
-            <div class="card" style="width: 16rem; height: 25rem">
+            <div class="card" style="width: 16rem; height: 30rem">
               <img
-                src="Assets/Projects/Cards.jpg"
+                src="Assets/Projects/Calculator.jpg"
                 class="card-img-top"
-                alt="Cards"
+                alt="1 Page Website"
               />
               <div class="card-body">
-                <h5 class="card-title">Cards</h5>
-                <p class="card-title">First attempt at making cards.</p>
+                <h5 class="card-title fw-bold">Calculator</h5>
+                <p class="card-title">
+                  First project that included JavaScript.
+                </p>
               </div>
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">HTML</li>
-                <li class="list-group-item">CSS</li>
+                <li class="list-group-item">css</li>
+                <li class="list-group-item">JavaScript</li>
                 <li class="list-group-item">Bootstrap</li>
               </ul>
               <div class="card-body">
                 <a
-                  href="https://github.com/Darrenpet/Cards"
+                  href="https://github.com/Darrenpet/Calculator"
                   class="card-link"
                   target="_blank"
                   ><i class="bi bi-github" style="font-size: 2rem"></i>Github</a
                 >
                 <a
-                  href="https://amazing-bose-1e08c3.netlify.app"
+                  href="https://affectionate-chandrasekhar-919229.netlify.app"
                   class="card-link"
                   target="_blank"
-                  ><i class="bi bi-diamond" style="font-size: 2rem"></i
+                  ><i
+                    ><span
+                      class="iconify"
+                      data-icon="simple-icons:netlify"
+                      style="font-size: 2rem"
+                    ></span></i
                   >Netlify</a
                 >
               </div>
@@ -485,28 +473,29 @@
           <div class="col pb-5">
             <div class="card" style="width: 16rem; height: 25rem">
               <img
-                src="Assets/Projects/1 Page Website.jpg"
+                src="Assets/Projects/eCommerce Store.jpg"
                 class="card-img-top"
                 alt="1 Page Website"
               />
               <div class="card-body">
-                <h5 class="card-title">1 Page Website</h5>
-                <p class="card-title">A website that we had to recreate.</p>
+                <h5 class="card-title">eCommerce Store</h5>
+                <p class="card-title">We had to create an eCommerce Store.</p>
               </div>
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">HTML</li>
                 <li class="list-group-item">CSS</li>
                 <li class="list-group-item">Bootstrap</li>
+                <li class="list-group-item">JavaScript</li>
               </ul>
               <div class="card-body">
                 <a
-                  href="https://github.com/Darrenpet/1-page-website"
+                  href="https://github.com/Darrenpet/CRUD-Excercise"
                   class="card-link"
                   target="_blank"
                   ><i class="bi bi-github" style="font-size: 2rem"></i>Github</a
                 >
                 <a
-                  href="https://suspicious-khorana-4a51a0.netlify.app"
+                  href="https://awesome-davinci-9bf4c2.netlify.app/"
                   class="card-link"
                   target="_blank"
                   ><i class="bi bi-diamond" style="font-size: 2rem"></i
@@ -737,6 +726,7 @@
                     id="fullName"
                     aria-describedby="fullNameHelp"
                     name="Full Name"
+                    required
                   />
                   <div id="fullNameHelp" class="form-text">
                     We'll never share your details with anyone else.
@@ -752,6 +742,7 @@
                     id="email"
                     aria-describedby="emailHelp"
                     name="Email"
+                    required
                   />
                   <div id="emailHelp" class="form-text">
                     We'll never share your email with anyone else.
@@ -767,6 +758,7 @@
                     id="phone"
                     aria-describedby="phonenumberHelp"
                     name="Phone Number"
+                    required
                   />
                   <div id="cityHelp" class="form-text">
                     We'll never share your details with anyone else.
@@ -786,9 +778,9 @@
         </div>
         <div class="col-md-6">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.962970666335!2d18.553612515215494!3d-34.070463480601006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc46edafd28399%3A0xa2a4aea172016881!2s16%20Dageraad%20Rd%2C%20Strandfontein%2C%20Cape%20Town%2C%207788!5e0!3m2!1sen!2sza!4v1635425477785!5m2!1sen!2sza"
-            width="100%"
-            height="100%"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423396.5211337711!2d18.690102271595055!3d-33.99804754206868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1c34a689d9ee1251%3A0xe85d630c1fa4e8a0!2sSouth%20Africa!5e0!3m2!1sen!2sza!4v1637931016920!5m2!1sen!2sza"
+            width="425"
+            height="450"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
@@ -804,6 +796,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link px-2 text-muted">darrenpetersn16@gmail.com</a>
+          </li>
+          <li class="nac-item">
+            <a class="nav-link px-2 text-muted">&copy; 2021 Portfolio, Ltd</a>
           </li>
         </ul>
 
@@ -823,7 +818,12 @@
               title="Netlify"
               target="_blank"
             >
-              <i class="bi bi-diamond" style="font-size: 2rem"></i
+              <i
+                ><span
+                  class="iconify"
+                  data-icon="simple-icons:netlify"
+                  style="font-size: 2rem"
+                ></span></i
             ></a>
           </li>
           <li class="ms-3">

@@ -1,0 +1,76 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+    <style>
+      .box {
+        padding: 100px 0;
+        width: 400px;
+        text-align: center;
+        background: #ddd;
+        margin: 20px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My first Vue Website</h1>
+    <!-- <hr /> -->
+    <div id="app">
+      <div v-if="true">
+        <h3>{{ name }} {{ sentence }} {{ age }}</h3>
+      </div>
+      <!-- <button v-on:click="age++">Increase age</button>
+      <button v-on:click="age--">Decrease age</button>
+      <br /><br />
+      <div @click="name = 'Sarah'">
+        Change Xolani's name to Sarah by clicking this sentence.
+      </div>
+      <br /><br />
+      <div @click="changeName">
+        Change Xolani's name to Palesa by clicking this sentence.
+      </div>
+      <br /><br />
+      <div @click="changeSentence('is turning')">
+        Change the sentence by clicking this sentence.
+      </div>
+      <br /><br />
+      <hr /> -->
+      <div v-if="false">
+        <h3>
+          You will not see this sentence if the conditional value is set to
+          false
+        </h3>
+      </div>
+      <div v-if="showSentence">
+        <h3>
+          This sentence is being displayed using the data property that is set
+          to true
+        </h3>
+      </div>
+
+      <button @click="toggleShowSentence">
+        <span v-if="showSentence">Hide Sentence</span>
+        <span v-else>Show Sentence</span>
+      </button>
+
+      <div v-show="showSentence">currently showing the sentence</div>
+
+      <div class="box" @mouseover="handleEvent($event, 5)">
+        mouseover (enter)
+      </div>
+
+      <div class="box" @mouseleave="handleEvent">mouseleave</div>
+
+      <div class="box" @dblclick="handleEvent">double click</div>
+
+      <div class="box" @mousemove="handleMouseMove">
+        position - {{ x }} - {{ y }}
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

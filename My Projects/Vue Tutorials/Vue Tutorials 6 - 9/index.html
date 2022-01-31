@@ -1,0 +1,55 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>First Vue Website</h1>
+    <div id="app">
+      <!-- <a v-bind:href="url" target="_blank">Young Grasshopper Website</a>
+      <br /><br />
+      <a :href="url" target="_blank"
+        >Short hand for data binding - Young Grasshopper Website</a
+      > -->
+
+      <div v-if="showDiscography">
+        <ul>
+          <li
+            v-for="discography in filteredDiscographies"
+            :class="{ fav: discography.myFav}"
+            @click="toggleFav(discography)"
+          >
+            <img
+              :src="discography.img"
+              :alt="discography.album"
+              style="width: 100px; height: 100px"
+            />
+            <h3>
+              <span style="font-weight: bold">Artist:</span> {{
+              discography.artist }}
+            </h3>
+            <p>
+              <span style="font-weight: bold">Album:</span> {{ discography.album
+              }}
+            </p>
+            <p>
+              <span style="font-weight: bold">Genre:</span> {{ discography.genre
+              }}
+            </p>
+          </li>
+        </ul>
+      </div>
+      <center>
+        <button @click="toggleShowDiscography">
+          <span v-if="showDiscography">Hide Discography</span>
+          <spam v-else>Show Discography</spam>
+        </button>
+      </center>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
